@@ -1,5 +1,5 @@
 # pokedex
-Simple pokedex using the pokeapi(https://pokeapi.co/)
+:bug: Simple pokedex using the pokeapi(https://pokeapi.co/)
 
 https://panbak.github.io/pokedex
 
