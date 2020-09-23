@@ -1,0 +1,141 @@
+:root {
+    --fire : rgba(240, 128, 48, 0.7);
+
+    --normal : rgba(168, 168, 120, 0.7);
+
+    --fighting : rgb(192, 48, 40);
+
+    --water: rgba(104, 144, 240, 0.7);
+
+    --flying: rgba(168, 144, 240, 0.7);
+
+    --grass: rgba(120, 200, 80, 0.7);
+
+    --poison: rgba(160, 64, 160, 0.7);
+
+    --electric: rgba(248, 208, 48, 0.7);
+
+    --ground: rgba(224, 192, 104, 0.7);
+
+    --psychic: rgba(248, 88, 136, 0.7);
+
+    --rock: rgba(184, 160, 56, 0.7);
+
+    --ice: rgba(152, 216, 216, 0.7);
+
+    --bug: rgba(168, 184, 32, 0.7);
+
+    --dragon: rgba(112, 56, 248, 0.7);
+
+    --ghost: rgba(112, 88, 152, 0.7);
+
+    --dark: rgba(112, 88, 72, 0.7);
+
+    --steel: rgba(184, 184, 208, 0.7);
+
+    --fairy: rgba(238, 153, 172, 0.7);
+}
+
+body {
+    background-color: #CC0000;
+}
+
+.poke-card {
+    transition: 0.3s;
+    margin: 0;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.poke-card:hover {
+    transform: translateY(-10px);
+}
+
+.poke-card img{
+    width: 80%;
+    margin: 20px;
+}
+
+.poke-name {
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+/* badge poke types */
+
+.fire {
+    background: #F08030;
+}
+.normal {
+    background: #A8A878;
+}
+.fighting {
+    background: #C03028;
+}
+.water {
+    background: #6890F0;
+}
+.flying {
+    background: #A890F0;
+}
+.grass {
+    background: #78C850;
+}
+.poison {
+    background: #A040A0;
+}
+.electric {
+    background: #F8D030;
+}
+.ground {
+    background: #E0C068;
+}
+.psychic {
+    background: #F85888;
+}
+.rock {
+    background: #B8A038;
+}
+.ice {
+    background: #98D8D8;
+}
+.bug {
+    background: #A8B820;
+}
+.dragon {
+    background: #7038F8;
+}
+.ghost {
+    background: #705898;
+}
+.dark {
+    background: #705848;
+}
+.steel {
+    background: #B8B8D0;
+}
+.fairy {
+    background: #EE99AC;
+}
+
+/*------------*/
+
+/* stats */
+
+#stats {
+    display: none;
+}
+
+#stats p {
+    color: white;
+    cursor: pointer;
+}
+
+#stats img {
+    height: 100%;
+    width: 100%;
+    max-width: 10rem;
+}
+
+/*----------------------*/
