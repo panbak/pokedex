@@ -45,7 +45,7 @@ const drawPokemonCards = (pokemons) => {
         styleCss+='); }';
         style.innerHTML += styleCss;
         document.getElementsByTagName('head')[0].appendChild(style);
-        let card = '<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 col-6"><div id="'+pokemon.id+'" class="card poke-card '+className+' m-2" data-id="'+pokemon.id+'"> <img class="mx-auto" src="'+pokemon.image+'"> <div class="poke-name mb-2">'+pokemon.name.charAt(0).toUpperCase()+pokemon.name.slice(1)+'</div> <div class="card-footer"> '+pokemon.types+' </div> </div></div>'
+        let card = '<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 col-6"><div id="'+pokemon.id+'" class="card poke-card '+className+' m-2" data-id="'+pokemon.id+'"> <img class="mx-auto" src="'+pokemon.image+'"><div class="poke-name mb-2">'+pokemon.name.charAt(0).toUpperCase()+pokemon.name.slice(1)+'</div> <div class="h5 text-center"><span class="badge badge-pill badge-light">'+getPokemonId(pokemon.id)+'</span></div>  <div class="card-footer"> '+pokemon.types+' </div> </div></div>'
 
         document.getElementById('pokedex').innerHTML+=card;
 
@@ -77,6 +77,8 @@ const generateRandomClass = function(){
     return 'class_'+Math.random().toString(20).substr(2, 6);
 }
 
-
+const getPokemonId = function(id){
+    return '#'+("0000" + id).slice(-4);
+}
 
 fetchPokemon();
