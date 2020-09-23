@@ -37,7 +37,7 @@
 }
 
 body {
-    background-color: #CC0000;
+    background: linear-gradient(to bottom right, black, #800000);
 }
 
 .poke-card {
